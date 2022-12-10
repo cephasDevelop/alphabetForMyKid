@@ -1,0 +1,48 @@
+body{
+    height:100vh;
+    background-color: rgb(29, 29, 128);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:500px;
+    height:100vh;
+    /* background-color: aqua; */
+}
+
+#alphabets{
+    padding:10px;
+    width: 500px;
+    height:40vh;
+    border-radius: 20px;
+    background-color: rgb(120, 173, 120);
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#lists{
+    width: 500px;
+    height: 60vh;
+    border-radius: 20px;
+    background-color: rgb(180, 110, 70);
+}
+.letter{
+    margin:2px;
+    height: 50px;
+    width:50px;
+    border-radius: 10px;
+    background-color: orange;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.letter:hover {
+    color:pink;
+    scale: 1.2;
+}
