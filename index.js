@@ -7,17 +7,32 @@ const alphabeArray = [
     'U', 'V', 'W', 'X', 'Y', 'Z'
 ];
 const wordObj = {
-    'A': ['apple', 'arm', 'ankle', 'aunt', 'ant'],'B': ['ball','bell','back','black','bag'],
-    'C': ['cat', 'car', 'cake'], 'D': ['dog', 'donkey', 'duck', 'dolphine'],
-    'E': ['egg','elbow','elephant','ear','eye'],'F': ['fruite','food','fish','frog','far','fat'],
-    'G': ['grapes', 'goat', 'good', 'good night'], 'H': ['hat','hot','horse','head','hair'],
-    'I': ['ice cream', 'ice'], 'J': ['jeep','jump','jet'],'K': ['key','knife','knee'],
-    'L': ['lion', 'leap', 'lip', 'leg'], 'M': ['monster', 'monkey', 'motor cycle'],
-    'N': ['nest','nice','near','nose'], 'O': ['orange','ok','on','owl'],
-    'P': ['parrot', 'pants', 'pot'], 'Q': ['queen', 'quill'], 'R': ['ring', 'right', 'run'],
-    'S': ['sleep','solider','sheep','ship'], 'T': ['tiger','tea','tounge','teeth'],
-    'U': ['umbrella', 'up', 'uncle'], 'V': ['violine'], 'W': ['watch', 'water', 'write', 'white'],
-    'X': ['xylophone'], 'Y': ['yellow','you','yak'], 'Z': ['zebra']
+    'A': ['apple', 'arm', 'ankle', 'aunt', 'ant'],
+    'B': ['ball', 'bell', 'back', 'black', 'bag','brother'],
+    'C': ['cat', 'car', 'cake','chicken','chilli','chalk','church'],
+    'D': ['dog', 'donkey', 'duck', 'dolphine','daiper','daddy'],
+    'E': ['egg', 'elbow', 'elephant', 'ear', 'eye'],
+    'F': ['fruite', 'food', 'fish', 'frog', 'far', 'fat','flute','flag','foot'],
+    'G': ['grapes', 'goat', 'good', 'good night','girl','grade'],
+    'H': ['hat', 'hot', 'horse', 'head', 'hair','hen'],
+    'I': ['ice cream', 'ice'],
+    'J': ['jeep', 'jump', 'jet'],
+    'K': ['key', 'knife', 'knee'],
+    'L': ['lion', 'leap', 'lip', 'leg'],
+    'M': ['monster', 'monkey', 'motor cycle','mother'],
+    'N': ['nest', 'nice', 'near', 'nose','neck'],
+    'O': ['orange', 'ok', 'on', 'owl'],
+    'P': ['parrot', 'pants', 'pot','phone'],
+    'Q': ['queen', 'quill'],
+    'R': ['ring', 'right', 'run','red','rain'],
+    'S': ['sleep', 'solider', 'sheep', 'ship','sister','scissors','sun'],
+    'T': ['tiger', 'tea', 'tounge', 'teeth'],
+    'U': ['umbrella', 'up', 'uncle'],
+    'V': ['violine'],
+    'W': ['watch', 'water', 'write', 'white','witch','wrong'],
+    'X': ['xylophone','x-ray'],
+    'Y': ['yellow', 'you', 'yak'],
+    'Z': ['zebra','zip']
 };
 
 const letterDivArr = []
@@ -47,6 +62,7 @@ function displayWords(abcd) {
     // let tempoWords = wordObj[abcd].map((val, idx) => (<p key='idx'>{`${val}`}</p>))
     for (let i = 0; i < wordObj[abcd].length; i++) {
         tempoWord = document.createElement('p');
+        tempoWord.classList.add('word');
         tempoWord.innerHTML = wordObj[abcd][i];
         showWords.appendChild(tempoWord)
      }
